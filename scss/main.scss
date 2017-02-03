@@ -20,6 +20,13 @@ font-size: 100px;
 color: #d6d32a;
 }
 
+.complete{
+  font-size: 0;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 13%;
+}
 .output-textbox {
 position: absolute;
 top: 100%;
@@ -30,6 +37,7 @@ font-size: 60px;
 background-color: rgba(255,255,255, 0.5);
 width: 100%;
 min-height: 36px;
+text-align: center;
 }
 
 .input-textbox {
