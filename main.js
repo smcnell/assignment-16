@@ -1,5 +1,15 @@
 console.log("YOOO")
+var inputValue=document.querySelector(".input-textbox input")
+var buttonEl= document.querySelector(".input-textbox button")
+var outputEl=document.querySelector(".output-textbox")
+var fakeTimerEl= document.querySelector(".fake-timer")
 
+buttonEl.addEventListener("click", function(evt){
+  outputEl.innerHTML=inputValue.value;
+  fakeTimerEl.style.display="none"
+  inputValue.style.display="none"
+  buttonEl.style.display="none"
+})
 
 var timerEl = document.querySelector(".timer")
 var counterVal= 1500
@@ -8,7 +18,7 @@ var textBox= document.querySelector(".output-textbox")
 // console.log(completeEl)
 
 
-
+buttonEl.addEventListener("click", function(countBack){
 var countBack= setInterval(function(){
   var seconds=counterVal
   var minutes= Math.floor(counterVal/60);
@@ -23,16 +33,11 @@ var countBack= setInterval(function(){
       completeEl.style.fontSize="40px"
       timerEl.style.display="none"
       textBox.style.display="none"
+      outputEl.style.display="none"
       }
 }, 10)
-
-var inputValue=document.querySelector(".input-textbox input")
-var buttonEl= document.querySelector(".input-textbox button")
-var outputEl=document.querySelector(".output-textbox")
-
-buttonEl.addEventListener("click", function(evt){
-  outputEl.innerHTML=inputValue.value
 })
+
 
 
 

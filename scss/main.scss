@@ -1,5 +1,5 @@
 body {
-  background-color: orange;
+  background-color: #fff;
 }
 
 * {
@@ -8,16 +8,30 @@ body {
 
 .tomato-pic {
   position: relative;
+  width: 90%;
+  max-height: 800px;
 }
+
 
 .timer {
 position: absolute;
-top: 80%;
-left: 50%;
+top: 60%;
+left: 35%;
 // transform: translateX(-50%);
 // transform: translateY(-50%);
 font-size: 100px;
 color: #d6d32a;
+}
+
+.fake-timer {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  // transform: translateX(-50%);
+  // transform: translateY(-50%);
+  font-size: 100px;
+  color: #d6d32a;
+
 }
 
 .complete{
@@ -29,7 +43,7 @@ color: #d6d32a;
 }
 .output-textbox {
 position: absolute;
-top: 100%;
+top: 90%;
 // left: 50%;
 // transform: translateX(50%);
 // transform: translateY(-50%);
@@ -46,8 +60,21 @@ text-align: center;
   width: 100%;
 }
 
+.input-textbox input{
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 3px #424141;
+  margin-bottom: 30px;
+
+
+}
+
 .input-textbox button {
   background-color: blue;
   color: #fff;
-  // font-size: 30px;
+  font-size: 30px;
+  width: 50px;
+  padding: 0px 4px 10px 4px;
 }
