@@ -3,6 +3,8 @@ var inputValue=document.querySelector(".input-textbox input")
 var buttonEl= document.querySelector(".input-textbox button")
 var outputEl=document.querySelector(".output-textbox")
 var fakeTimerEl= document.querySelector(".fake-timer")
+var friedGreenEl= document.querySelector(".green-tomato")
+var tomatoEl= document.querySelector(".tomato-pic")
 
 buttonEl.addEventListener("click", function(evt){
   outputEl.innerHTML=inputValue.value;
@@ -23,9 +25,17 @@ var countBack= setInterval(function(){
   var seconds=counterVal
   var minutes= Math.floor(counterVal/60);
   var secondsLeft=counterVal-(minutes*60)
-  if (secondsLeft < 10){
+  if (minutes < 1){
+    friedGreenEl.style.display="initial";
+    tomatoEl.style.display="none";
+    timerEl.style.backgroundColor= "#f2df37";
+    timerEl.style.color="#fff";
+  }
+if (secondsLeft < 10){
     secondsLeft= "0" + secondsLeft;
   }
+
+//-------------
   counterVal--
   timerEl.innerHTML=minutes+ ":" + secondsLeft
     if(counterVal === 0 ) {
