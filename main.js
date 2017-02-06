@@ -45,7 +45,7 @@ if (secondsLeft < 10){
       textBox.style.display="none"
       outputEl.style.display="none"
       }
-}, 10)
+}, 1000)
 })
 
 
