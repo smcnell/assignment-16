@@ -40,6 +40,9 @@ if (secondsLeft < 10){
   timerEl.innerHTML=minutes+ ":" + secondsLeft
     if(counterVal === 0 ) {
       clearInterval(countBack)
+      friedGreenEl.style.display="none";
+      tomatoEl.style.display="initial"
+
       completeEl.style.fontSize="40px"
       timerEl.style.display="none"
       textBox.style.display="none"
